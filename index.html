@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Calculate the exact time between two times in hours, minutes, decimal hours and total minutes. Fast, free and mobile-friendly.">
+  <meta name="keywords" content="time duration calculator, hours between times, time difference calculator, work hours calculator, elapsed time calculator">
+  <meta name="author" content="Time Duration Calculator">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#7a4ce0">
+  <meta property="og:title" content="Time Duration Calculator - Hours & Minutes Between Times">
+  <meta property="og:description" content="Quickly calculate the duration between two times, including overnight shifts.">
+  <meta property="og:type" content="website">
+  <title>Time Duration Calculator | Hours & Minutes Between Times</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Time Duration Calculator",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Any",
+    "description": "Calculate the duration between two times in hours, minutes, decimal hours and total minutes.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+</head>
+<body id="app-body">
+  <header id="site-header">
+    <a id="brand-link" href="#top" aria-label="Time Duration Calculator home">
+      <span id="brand-icon" aria-hidden="true">⏱️</span>
+      <span id="brand-name">Time Duration</span>
+    </a>
+  </header>
+
+  <main id="main-content">
+    <section id="hero-section" aria-labelledby="hero-title">
+      <div id="hero-badge">FAST • FREE • SIMPLE</div>
+      <h1 id="hero-title">Time Duration Calculator</h1>
+      <p id="hero-subtitle">Find the exact time between two clock times.</p>
+    </section>
+
+    <section id="calculator-section" aria-labelledby="calculator-title">
+      <div id="calculator-heading-row">
+        <div id="calculator-heading-copy">
+          <p id="calculator-eyebrow">CALCULATE</p>
+          <h2 id="calculator-title">Enter your times</h2>
+        </div>
+        <button id="swap-button" type="button" aria-label="Swap start and end times">↔ Swap</button>
+      </div>
+
+      <form id="duration-form" novalidate>
+        <div id="time-fields-grid">
+          <div id="start-field">
+            <label id="start-label" for="start-time">Start time</label>
+            <input id="start-time" type="time" value="09:00" required>
+          </div>
+
+          <div id="end-field">
+            <label id="end-label" for="end-time">End time</label>
+            <input id="end-time" type="time" value="17:00" required>
+          </div>
+        </div>
+
+        <label id="overnight-option" for="overnight-toggle">
+          <input id="overnight-toggle" type="checkbox">
+          <span id="overnight-checkmark" aria-hidden="true"></span>
+          <span id="overnight-copy">
+            <strong id="overnight-title">Ends next day</strong>
+            <span id="overnight-description">Use for overnight shifts or events.</span>
+          </span>
+        </label>
+
+        <p id="form-error" role="alert" aria-live="polite"></p>
+        <button id="calculate-button" type="submit">Calculate Duration</button>
+      </form>
+    </section>
+
+    <section id="result-section" aria-labelledby="result-title" aria-live="polite">
+      <p id="result-eyebrow">YOUR DURATION</p>
+      <h2 id="result-title"><span id="result-hours">8</span> Hours <span id="result-minutes">0</span> Minutes</h2>
+      <div id="result-summary-grid">
+        <article id="total-minutes-card">
+          <span id="total-minutes-label">Total minutes</span>
+          <strong id="total-minutes-value">480</strong>
+        </article>
+        <article id="decimal-hours-card">
+          <span id="decimal-hours-label">Decimal hours</span>
+          <strong id="decimal-hours-value">8.00</strong>
+        </article>
+      </div>
+      <p id="result-range">09:00 → 17:00</p>
+    </section>
+
+    <aside id="main-ad-slot" aria-label="Advertisement">
+      <span id="main-ad-label">Advertisement</span>
+      <div id="main-ad-space">Ad space</div>
+    </aside>
+
+    <section id="info-section" aria-labelledby="info-title">
+      <h2 id="info-title">How it works</h2>
+      <p id="info-text">Choose a start and end time. For a time that finishes after midnight, select <strong>Ends next day</strong>.</p>
+    </section>
+  </main>
+
+  <footer id="site-footer">
+    <p id="footer-text">Time Duration Calculator • Quick time difference tool</p>
+    <a id="back-to-top-link" href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
